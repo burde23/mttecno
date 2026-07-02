@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ViaiPhone — Admin</title>
+<title>MT TECNO — Admin</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
 <style>
@@ -417,7 +417,7 @@ a{text-decoration:none;color:inherit}
   <div class="lbox">
     <div class="llogo">
       <div class="lmark"><svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg></div>
-      <div><div class="lname">ViaiPhone</div><div class="ltag">Panel de administración</div></div>
+      <div><div class="lname">MT TECNO</div><div class="ltag">Panel de administración</div></div>
     </div>
     <h1 class="ltitle">Ingresar</h1>
     <p class="lsub">Introducí tu clave de administrador.</p>
@@ -432,7 +432,7 @@ a{text-decoration:none;color:inherit}
   <header class="adm-hdr">
     <div class="adm-brand">
       <div class="adm-bmark"><svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg></div>
-      <div><div class="adm-bname">ViaiPhone</div><div class="adm-btag">Admin</div></div>
+      <div><div class="adm-bname">MT TECNO</div><div class="adm-btag">Admin</div></div>
     </div>
     <div class="adm-hmid"><div class="adm-dot"></div><span class="adm-status">Conectado a D1</span></div>
     <div class="adm-hright">
@@ -1492,7 +1492,7 @@ function buildOrderPDF(o){
   doc.rect(0,0,pageW,36,'F');
   doc.setTextColor(255,255,255);
   doc.setFontSize(20);doc.setFont('helvetica','bold');
-  doc.text('ViaiPhone',14,15);
+  doc.text('MT TECNO',14,15);
   doc.setFontSize(8);doc.setFont('helvetica','normal');
   doc.text('Buenos Aires · Argentina',14,22);
   doc.setFontSize(9);doc.setFont('helvetica','bold');
@@ -1568,7 +1568,7 @@ function buildOrderPDF(o){
   /* ── Pie ── */
   const lastY=doc.lastAutoTable.finalY+12;
   doc.setFontSize(7);doc.setTextColor(170,170,175);doc.setFont('helvetica','normal');
-  doc.text('ViaiPhone · Buenos Aires, Argentina',pageW/2,lastY,{align:'center'});
+  doc.text('MT TECNO · Buenos Aires, Argentina',pageW/2,lastY,{align:'center'});
   doc.text('Este documento es un comprobante de pedido y no tiene validez fiscal.',pageW/2,lastY+4,{align:'center'});
 
   doc.save('iphone-la-plata-pedido-'+o.id+'.pdf');
@@ -1588,7 +1588,7 @@ async function downloadMonthPDF(monthKey){
 
   /* Header */
   doc.setFillColor(29,29,31);doc.rect(0,0,pageW,34,'F');
-  doc.setTextColor(255,255,255);doc.setFontSize(18);doc.setFont('helvetica','bold');doc.text('ViaiPhone',14,14);
+  doc.setTextColor(255,255,255);doc.setFontSize(18);doc.setFont('helvetica','bold');doc.text('MT TECNO',14,14);
   doc.setFontSize(9);doc.setFont('helvetica','normal');doc.text('Buenos Aires · La Plata · Argentina',14,21);
   doc.setFont('helvetica','bold');doc.setFontSize(13);doc.text(`RESUMEN MENSUAL — ${mn[parseInt(mo)-1].toUpperCase()} ${yr}`,pageW-14,16,{align:'right'});
   doc.setFont('helvetica','normal');doc.setFontSize(9);
@@ -1633,7 +1633,7 @@ async function downloadMonthPDF(monthKey){
 
   const finalY=doc.lastAutoTable.finalY+8;
   doc.setFontSize(7);doc.setTextColor(160,160,165);
-  doc.text(`ViaiPhone · CUIT 27-47083024-2 · Generado el ${new Date().toLocaleDateString('es-AR')}`,pageW/2,finalY,{align:'center'});
+  doc.text(`MT TECNO · CUIT 27-47083024-2 · Generado el ${new Date().toLocaleDateString('es-AR')}`,pageW/2,finalY,{align:'center'});
 
   doc.save(`iphone-la-plata-resumen-${monthKey}.pdf`);
   showToast('Resumen mensual descargado ✓','success');
